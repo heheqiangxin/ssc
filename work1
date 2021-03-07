@@ -1,0 +1,35 @@
+public class MainClass {
+    public static void main(String[] args){
+        LoginForm Login=new LoginForm();
+        Login.init();
+        Login.display();
+        Login.validate();
+    }
+}
+
+public class LoginForm {
+   public void init(){
+   }
+   public void display(){
+   }
+   public void validate(){
+      UserDAO dao= new UserDAO();
+      dao.findUser("zql","111");
+   }
+}
+
+public class UserDAO {
+        boolean findUser (String userName, String userPassword){
+            DBUtill DB = new DBUtill();
+            DB.getConnection();
+        }
+}
+
+import java.sql.Connection;
+
+public class DBUtill {
+        Connection getConnection(){
+        System.out.println("连接成功");
+            return null;
+        }
+}
