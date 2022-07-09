@@ -1,0 +1,9 @@
+.el-date-table td.in-range div, .el-date-table td.in-range div:hover, .el-date-table.is-week-mode .el-date-table__row.current div, .el-date-table.is-week-mode .el-date-table__row:hover div {
+    background-color: #22f4d6c9;
+}
+.el-table_1_column_2 el-table__cell{
+    height: 48px;
+}
+header .el-input,header .el-input .el-input__inner{
+    border-radius: 20px ;
+}
